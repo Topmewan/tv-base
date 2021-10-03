@@ -1,3 +1,7 @@
+:root {
+    --dark-color: #171717;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +19,7 @@ body {
 /* Navbar */
 .navbar {
     padding: 1rem;
-    background: #171717;
+    background: var(--dark-color);
 }
 
 .navbar__nav {
@@ -46,11 +50,23 @@ body {
     color:#f4f4f4;
     text-decoration: none;
     margin-left: 0.5rem;
-    border: 1px solid #171717;
+    border: 1px solid var(--dark-color);
     font-size: 20px;
 }
 
 .link__link a:hover {
     border-bottom: 1px solid #3c948b;
     color: #3c948b;
+}
+
+/* SearchBar */
+.searchbar {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.searchbar__form > input {
+    width: 100%;
+    padding: 10px 17px;
+    border: 1px solid var(--dark-color);
 }
