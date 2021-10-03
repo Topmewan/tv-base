@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Alert from "./Alert";
 
 
 function SearchBar() {
@@ -6,11 +7,10 @@ function SearchBar() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-
-
     }
     return (
         <div className="searchbar">
+            <Alert message="Please enter something" type="danger"/>
             <form className="searchbar__form">
                 <input
                     type="text"

@@ -100,3 +100,27 @@ body {
     border: 1px solid var(--second-color);
     box-shadow: 0 0 1px 1px rgba(60, 148, 139, 0.5);
 }
+
+/* Alert */
+.alert {
+    padding: 10px 17px;
+    font-size: 20px;
+    border: 1px solid var(--dark-color);
+    margin: 1rem 0;
+}
+
+.alert-warning {
+    background: #f8ffc4 ;
+    border:1px solid #ffee00 ;
+
+}
+.alert-danger {
+    background: #ffc4c4;
+    border:1px solid #ff0000;
+}
+
+.alert-info {
+    background:#d7eafe ;
+    border:1px solid #0523b7;
+
+}
