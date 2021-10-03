@@ -11,3 +11,46 @@ body {
     max-width: 1170px;
     margin: auto;
 }
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+    background: #171717;
+}
+
+.navbar__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__brand a {
+    font-size: 1.4rem;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.navbar__nav a:hover {
+    color: #3c948b;
+}
+
+.nav__links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.link__link a {
+    display: block;
+    padding: 1rem;
+    color:#f4f4f4;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    border: 1px solid #171717;
+    font-size: 20px;
+}
+
+.link__link a:hover {
+    border-bottom: 1px solid #3c948b;
+    color: #3c948b;
+}
