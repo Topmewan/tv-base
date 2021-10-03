@@ -1,5 +1,7 @@
 :root {
     --dark-color: #171717;
+    --second-color: #3c948b;
+    --white-color:#f4f4f4;
 }
 
 * {
@@ -30,12 +32,12 @@ body {
 
 .nav__brand a {
     font-size: 1.4rem;
-    color: #f4f4f4;
+    color: var(--white-color);
     text-decoration: none;
 }
 
 .navbar__nav a:hover {
-    color: #3c948b;
+    color: var(--second-color);
 }
 
 .nav__links {
@@ -47,7 +49,7 @@ body {
 .link__link a {
     display: block;
     padding: 1rem;
-    color:#f4f4f4;
+    color:var(--white-color);
     text-decoration: none;
     margin-left: 0.5rem;
     border: 1px solid var(--dark-color);
@@ -55,8 +57,8 @@ body {
 }
 
 .link__link a:hover {
-    border-bottom: 1px solid #3c948b;
-    color: #3c948b;
+    border-bottom: 1px solid var(--second-color);
+    color: var(--second-color);
 }
 
 /* SearchBar */
@@ -69,4 +71,5 @@ body {
     width: 100%;
     padding: 10px 17px;
     border: 1px solid var(--dark-color);
+    background: var(--white-color);
 }
