@@ -25,8 +25,6 @@ const ShowsState = (props) => {
             `https://api.tvmaze.com/search/shows?q=${searchTerm}`
         );
 
-        console.log(data);
-
         dispatch({
             type: SEARCH_SHOWS,
             payload: data,

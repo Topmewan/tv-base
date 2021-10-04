@@ -5,17 +5,17 @@ import Alert from "./Alert";
 
 
 function SearchBar() {
-    const [search,setSearch] = useState("");
+    const [searchTerm,setSearchTerm] = useState("");
 
     const showsContext = useContext(ShowsContext);
-    const {searchShow} = showsContext;
+    const {searchShows} = showsContext;
 
 
 
     const handleSearch = (e) => {
         e.preventDefault();
 
-        searchShow();
+        searchShows(searchTerm);
 
     };
 
@@ -26,8 +26,8 @@ function SearchBar() {
                 <input
                     type="text"
                     placeholder="Search for TV Show"
-                    value={search}
-                    onChange={(e) => setSearch(e.target.value)}
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
                 />
                 <button
                     className="btn btn-block"
@@ -39,6 +39,6 @@ function SearchBar() {
 
 
     );
-}
+};
 
 export default SearchBar;
