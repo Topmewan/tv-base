@@ -1,13 +1,24 @@
-import {useState} from "react";
+import { useState,useContext } from "react";
+import ShowsContext from '../context/shows/showsContext';
+
 import Alert from "./Alert";
 
 
 function SearchBar() {
     const [search,setSearch] = useState("");
 
+    const showsContext = useContext(ShowsContext);
+    const {searchShow} = showsContext;
+
+
+
     const handleSearch = (e) => {
         e.preventDefault();
-    }
+
+        searchShow();
+
+    };
+
     return (
         <div className="searchbar">
             <Alert message="Please enter something" type="danger"/>
