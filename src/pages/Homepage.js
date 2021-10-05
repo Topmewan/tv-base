@@ -9,8 +9,10 @@ const HomePage = () => {
     return(
         <div className="homepage">
             <SearchBar/>
-            {loading ? <h2>Loading..</h2> :
-                <div>
+            {loading ? (
+                <h2>Loading..</h2>
+                ) : (
+                <div className="homepage__list">
                     {shows.map(item => <ListItem
                         key={item.show.id}
                         id={item.show.id}
@@ -20,7 +22,7 @@ const HomePage = () => {
                     />
                     )}
                 </div>
-            }
+            )}
         </div>
     );
 };

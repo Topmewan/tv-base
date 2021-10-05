@@ -137,7 +137,7 @@ img {
     width: 210px;
     background: var(--white-color);
     box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
-    margin: 1rem 0;
+    margin: 1rem auto;
     cursor: pointer;
     display: inline-block;
 }
@@ -159,6 +159,12 @@ img {
 .info__rating {
     color: var(--second-color);
     padding: 5px;
+}
+/* Homepage */
+.homepage__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
 }
 
 
