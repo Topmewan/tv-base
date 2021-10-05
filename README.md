@@ -1,5 +1,5 @@
 # Example App
-[Cle=ick me](https://tv-search-by-denya.netlify.app/).
+[Click me](https://tv-search-by-denya.netlify.app/).
 
 # Getting Started with Create React App
 
