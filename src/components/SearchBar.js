@@ -27,7 +27,7 @@ function SearchBar() {
 
     return (
         <div className="searchbar">
-            {alert ? <Alert message={alert.message} type="danger"/>
+            {alert ? <Alert message={alert.message} type={alert.type}/>
                 : null}
             <form className="searchbar__form">
                 <input
@@ -43,9 +43,7 @@ function SearchBar() {
             </form>
 
         </div>
-
-
     );
-};
+}
 
 export default SearchBar;
