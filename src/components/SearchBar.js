@@ -1,7 +1,6 @@
 import { useState,useContext } from "react";
 import ShowsContext from '../context/shows/showsContext';
 import AlertsContext from '../context/alerts/alertsContext';
-
 import Alert from "./Alert";
 
 
