@@ -1,5 +1,6 @@
 import { useState,useContext } from "react";
 import ShowsContext from '../context/shows/showsContext';
+import AlertsContext from '../context/alerts/alertsContext';
 
 import Alert from "./Alert";
 
@@ -10,18 +11,24 @@ function SearchBar() {
     const showsContext = useContext(ShowsContext);
     const {searchShows} = showsContext;
 
+    const { alert, setAlert } = useContext(AlertsContext);
+
 
 
     const handleSearch = (e) => {
         e.preventDefault();
 
-        searchShows(searchTerm);
-
+        if(searchTerm === ""){
+            setAlert("Please enter something", "danger");
+        } else {
+            searchShows(searchTerm);
+        }
     };
 
     return (
         <div className="searchbar">
-            <Alert message="Please enter something" type="danger"/>
+            {alert ? <Alert message={alert.message} type="danger"/>
+                : null}
             <form className="searchbar__form">
                 <input
                     type="text"
