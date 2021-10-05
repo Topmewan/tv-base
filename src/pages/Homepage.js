@@ -1,6 +1,10 @@
-import SearchBar from "../components/SearchBar";
 import {useContext} from "react";
+
+//Context
 import ShowsContext from '../context/shows/showsContext';
+
+//Components
+import SearchBar from "../components/SearchBar";
 import ListItem from "../components/ListItem";
 import Spinner from "../components/Spinner";
 

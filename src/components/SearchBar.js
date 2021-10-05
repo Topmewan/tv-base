@@ -1,6 +1,10 @@
 import { useState,useContext } from "react";
+
+// Context
 import ShowsContext from '../context/shows/showsContext';
 import AlertsContext from '../context/alerts/alertsContext';
+
+//Components
 import Alert from "./Alert";
 
 

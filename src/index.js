@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+
+//State
 import ShowsState from "./context/shows/ShowsState";
 import AlertsState from "./context/alerts/AlertsState";
 

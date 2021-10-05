@@ -1,5 +1,9 @@
 import {useContext, useEffect} from "react";
+
+// Context
 import ShowsContext from '../context/shows/showsContext';
+
+// Components
 import Spinner from "../components/Spinner";
 
 const SinglePage = ({match}) => {
