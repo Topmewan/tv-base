@@ -2,6 +2,7 @@ import SearchBar from "../components/SearchBar";
 import {useContext} from "react";
 import ShowsContext from '../context/shows/showsContext';
 import ListItem from "../components/ListItem";
+import Spinner from "../components/Spinner";
 
 const HomePage = () => {
     const showContext = useContext(ShowsContext);
@@ -10,7 +11,7 @@ const HomePage = () => {
         <div className="homepage">
             <SearchBar/>
             {loading ? (
-                <h2>Loading..</h2>
+                <Spinner/>
                 ) : (
                 <div className="homepage__list">
                     {shows.map(item => <ListItem

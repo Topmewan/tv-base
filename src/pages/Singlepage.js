@@ -1,5 +1,6 @@
 import {useContext, useEffect} from "react";
 import ShowsContext from '../context/shows/showsContext';
+import Spinner from "../components/Spinner";
 
 const SinglePage = ({match}) => {
     const { getSingleShow, singleShow, loading } = useContext(ShowsContext);
@@ -20,7 +21,7 @@ const SinglePage = ({match}) => {
     return(
         <>
             {loading ? (
-                <h2>Loading..</h2>
+                <Spinner/>
             ) : (
                 <div className="singleshow">
                     <img
